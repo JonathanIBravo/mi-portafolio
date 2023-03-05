@@ -1,0 +1,592 @@
+/* Fuentes a utilizar */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+/* font-family: 'Source Code Pro', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+
+/* #colores */
+:root{
+    --main-bg-color: #ffae6a
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: beige;
+}
+#home{
+    background: linear-gradient(rgb(0,0,0,.7), rgb(0,0,0,.7)), url("../img/fondo04.jpg");
+    background-size: cover;
+    background-position: center center;
+    height:100vh;
+}
+
+
+#home .contenedor header{
+    background: var(--main-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.contenedor-header{
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.containter-logo{
+    width: 80px;
+}
+.containter-logo img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.nav-pag ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-pag ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.nav-pag ul li a:hover{
+    animation: vibrate .5s linear both;
+}
+
+@keyframes vibrate{
+    0%{transform:translate(0)}
+    20%{transform:translate(-1px,1px)}
+    40%{transform:translate(-1px,-1px)}
+    60%{transform:translate(1px,1px)}
+    80%{transform:translate(1px,-1px)}
+    100%{transform:translate(0)}
+}
+
+.nav-pag ul li a:hover{
+    transition: all 0.8s;
+    transform: scale(1.1);
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 2.0px;
+}
+
+.contenedor-header .redes a{
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.presentacion .bienvenida{
+    text-decoration: underline #ffae6a;
+    text-decoration-thickness: 5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.presentacion h2{
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.presentacion h2 span{
+    color: var(--main-bg-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.presentacion a{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid white ;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.presentacion a:hover{
+    background-color:var(--main-bg-color);
+    animation: vibrate .5s linear both;
+    }
+    
+    @keyframes vibrate{
+        0%{transform:translate(0)}
+        20%{transform:translate(-1px,1px)}
+        40%{transform:translate(-1px,-1px)}
+        60%{transform:translate(1px,1px)}
+        80%{transform:translate(1px,-1px)}
+        100%{transform:translate(0)}
+    }
+
+#icon-nav{
+    display: none;
+}
+
+/* -----------------------------------SOBRE MI----------------------------------- */
+
+#aboutme{
+    background-color: beige;
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: black;
+    display: flex;
+}
+
+.contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+.contenedor-foto img{
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(95, 95, 83, 0.24);
+}
+
+.sobremi{
+    margin: 0 40px;
+}
+
+.sobremi .titulo-seccion{
+    font-size: 1.8rem;
+    text-transform:none;
+    font-family: 'Space Mono', monospace;
+    color: black;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+    letter-spacing: 2px;
+}
+
+.sobremi  h2{
+    font-size: 1,5rem;
+    font-weight: bold;
+    margin: 5px 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.sobremi h2 span{
+    color: var(--main-bg-color);
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sobremi h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: underline var(--main-bg-color);
+    text-transform: uppercase;
+    text-decoration-thickness: 3px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.sobremi p{
+    font-size: 1.0rem;
+    line-height: 25px;
+    color: black;
+    margin-bottom: 12px;
+    width: 500px;
+}
+
+
+.sobremi a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    border: 2px solid rgba(95, 95, 83, 0.24);
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: .5s;
+}
+.sobremi a:hover{
+    background-color:var(--main-bg-color);
+    animation: vibrate .5s linear both;
+    }
+    
+    @keyframes vibrate{
+        0%{transform:translate(0)}
+        20%{transform:translate(-1px,1px)}
+        40%{transform:translate(-1px,-1px)}
+        60%{transform:translate(1px,1px)}
+        80%{transform:translate(1px,-1px)}
+        100%{transform:translate(0)}
+    }
+
+/* -----------------------------------Proyectos----------------------------------- */
+
+#project{
+    background-color: beige;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 15px;
+}
+
+#project .titulo-seccion{
+    font-size: 2.2rem;
+    text-transform:none;
+    font-family: 'Space Mono', monospace;
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+    letter-spacing: 2px;
+}
+
+.fila{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px;
+}
+
+.proyecto{
+    width: 300px;
+    height: 300px;
+    border: 3px solid rgba(95, 95, 83, 0.24) ;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.proyecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.proyecto .info{
+    background-color: rgba(0, 0, 0, 0.432);
+    position: absolute;
+    left: 0;
+    color: white;
+    width: 100%;
+    padding-top: 40%;
+    opacity: 0;
+    bottom: 0;
+}
+
+.proyecto:hover .info{
+    height: 100%;
+    opacity: 8; 
+    bottom: 50;
+}
+
+.info h4{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: underline var(--main-bg-color);
+    text-transform: uppercase;
+    text-decoration-thickness: 3px;
+    padding-bottom: 15px;
+}
+
+.contenedor-link{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-link-uno{
+    padding-left: 5px;
+}
+
+.fa-brands, .fa-solid{
+    color: white;
+}
+
+/* -----------------------------------Tegnologias----------------------------------- */
+
+#skills{
+    background-color: beige;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 15px;
+    height: 100vh;
+}
+
+.titulo-seccion{
+    font-size: 2.2rem;
+    text-transform:none;
+    font-family: 'Space Mono', monospace;
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+    letter-spacing: 2px;
+}
+
+.skills-contenedor{
+    row-gap: 3.5rem;
+}
+
+.titulo-skills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: black;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform:capitalize;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+}
+.skills-info, .skill-data, .skill-img{
+    display: grid;
+}
+
+.skills-info{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 2rem;
+}
+
+.skill-data{
+    justify-content: center;
+    text-align: center;
+}
+.skill-img{
+    width: 80px;
+    height: 100px;
+    background-color: rgb(8, 4, 4);
+    border-radius: 1.5rem;
+    border: 5px solid rgba(128, 128, 128, 0.233);
+    place-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.skill-img img{
+    width: 40px;   
+}
+
+.skill-nombre{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: .25rem;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+}
+
+
+.skill-img:hover img{
+    animation: bounce-skill .6s;
+}
+
+@keyframes bounce-skill{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translate(0);
+    }
+    60%{
+        transform: translateY(-3px);
+    }
+    80%{
+        transform: translate(0);
+    }
+}
+
+
+
+/*----------------------------------Contacto----------------------------------- */
+#contacto{
+    background-color: beige;
+    max-width: 1100px;
+    padding: 50px 15px;
+}
+
+#contacto .titulo-seccion{
+    font-size: 2.2rem;
+    text-transform:none;
+    font-family: 'Space Mono', monospace;
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+    letter-spacing: 2px;
+}
+
+#contacto .contenedor-cont{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+.contenedor-form form{
+    border: 2px solid var(--main-bg-color);
+    padding: 20px;
+}
+.contenedor-form form{
+    width: 800px;
+    border-radius: 20px;
+}
+
+.contenedor-form form .fila{
+    margin-bottom: 10px;
+}
+
+.contenedor-form form .mitad{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-form input, textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid;
+}
+
+.contenedor-form input{
+    width: 48%;
+}
+
+.contenedor-form .input-full{
+    width: 100%;
+}
+
+.info-contacto{
+    padding-left: 30px;
+}
+.info-contacto h4{
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    text-decoration: underline var(--main-bg-color);
+    text-decoration-thickness: 3px;
+}
+
+.info-contacto ul li{ 
+    font-size: 1.0rem;
+    color: black;
+    list-style: none;
+    padding-bottom: 5px
+}
+.fa-solid{
+    color: black;
+}
+.btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px; 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-enviar:hover{
+    background-color:var(--main-bg-color);
+    color: black;
+    animation: vibrate .5s linear both;
+    }
+    
+    @keyframes vibrate{
+        0%{transform:translate(0)}
+        20%{transform:translate(-1px,1px)}
+        40%{transform:translate(-1px,-1px)}
+        60%{transform:translate(1px,1px)}
+        80%{transform:translate(1px,-1px)}
+        100%{transform:translate(0)}
+    }
+
+
+/* ---------------footer ------------------*/
+footer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer p{
+    font-size: 0.8rem;
+    color: black;
+}
+
+.redes-footer{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes-footer .fa-brands .fa-solid{
+    color: black;
+}
+
+/* -----------responsive----------------- */
+
+/* 
+@media screen and (max-width:800px) {
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+} */
