@@ -196,6 +196,7 @@ body{
 
 .sobremi{
     margin: 0 40px;
+    padding: 20px;
 }
 
 .sobremi .titulo-seccion{
@@ -474,7 +475,8 @@ body{
 }
 
 .contenedor-form form{
-    border: 2px solid var(--main-bg-color);
+    background-color: var(--main-bg-color);
+    border: 2px solid black;
     padding: 20px;
 }
 .contenedor-form form{
@@ -576,13 +578,157 @@ footer p{
 
 /* -----------responsive----------------- */
 
-/* 
+
 @media screen and (max-width:800px) {
+    /*-------- header------- */
     .redes{
         display: none;
+    }
+    .containter-logo{
+        width: 50px;
     }
     nav{
         display: none;
     }
+    nav.responsive{
+        display: block;
+        background-color:var(--main-bg-color);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+    nav.responsive ul li a{
+        text-decoration: none;
+        color: black;
+        margin: 0 12px;
+        text-transform: uppercase;
+        font-family: 'Space Mono', monospace;
+        font-weight: 500;
+        font-size: 1.0rem;
+        cursor: pointer;
+        transition: .5s;
+    }
+    nav.responsive ul li a:hover{
+        transition: all 0.8s;
+        transform: scale(1.1);
+        display: inline-block;
+        text-decoration: underline;
+        text-decoration-thickness: 2.0px;
+    }
+    #icon-nav{
+        display: block;
+    }
+    /*-------- presentacion------- */
+    .presentacion .bienvenida{
+        font-size: 2.5rem;
+    }
+    .presentacion h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .presentacion h2 span{
+        color: var(--main-bg-color);
+        font-size: 1.2rem;
+    }
+    /*-------- sobremi------- */
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .contenedor-foto{
+        padding-top: 25px;
+        max-width: 300px;
+        margin-right: 40px;
+    }
+    
+    .sobremi .titulo-seccion{
+        font-size: 1.5rem;
+    }
+    
+    .sobremi  h2{
+        font-size: 1,2rem;
+        padding: 0 20px;
+    }
+    
+    .sobremi h2 span{
+        font-size: 1.8rem;
+    }
+    
+    .sobremi h3{
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+    
+    .sobremi p{
+        padding: 0 20px;
+        font-size: 1.0rem;
+        line-height: 25px;
+        color: black;
+        margin-bottom: 12px;
+        width: 500px;
+    }
+    .sobremi a{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    /* --------------proyecto --------------- */
 
-} */
+    #project .titulo-seccion{
+        font-size: 1.8rem;
+    }
+    .fila{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    /* --------------Tegnologias --------------- */
+    .titulo-seccion{
+        font-size: 1.8rem;
+    }
+    .titulo-skills{
+        font-size: 1.2rem;
+    }
+    .skills-info, .skill-data, .skill-img{
+        display: grid;
+    }
+    .skills-info{
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 1rem;
+    }
+    /* --------------Contacto --------------- */
+    #contacto .titulo-seccion{
+        font-size: 1.8rem;
+    }
+    
+    #contacto .contenedor-cont{
+        margin-left: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-form form{
+        width: 400px;
+        border-radius: 20px;
+    }
+    
+    .contenedor-form form .fila{
+        margin-bottom: 10px;
+    }
+    
+}
