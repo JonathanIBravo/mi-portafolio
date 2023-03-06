@@ -201,6 +201,7 @@ body{
 
 .sobremi .titulo-seccion{
     font-size: 1.8rem;
+    text-align: center;
     text-transform:none;
     font-family: 'Space Mono', monospace;
     color: black;
@@ -644,45 +645,45 @@ footer p{
     #aboutme{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
+        justify-content: center;
+        padding: 50px 5px;
     }
     .contenedor-foto{
         padding-top: 25px;
         max-width: 300px;
-        margin-right: 40px;
+        padding-left: 30px;
     }
     
     .sobremi .titulo-seccion{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        justify-content: center;
+        padding-right: 50px;
+        
     }
     
     .sobremi  h2{
-        font-size: 1,2rem;
-        padding: 0 20px;
+        font-size: 1,0rem;
+        padding: 0 5px;
     }
     
     .sobremi h2 span{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        
     }
     
     .sobremi h3{
-        font-size: 1.5rem;
-        padding: 0 20px;
+        font-size: 1.2rem;
+        padding: 0 ;
+
     }
     
     .sobremi p{
-        padding: 0 20px;
+        padding: 0 ;
         font-size: 1.0rem;
         line-height: 25px;
         color: black;
         margin-bottom: 12px;
-        width: 500px;
-    }
-    .sobremi a{
-        padding: 10px;
-        display: flex;
-        justify-content: center;
+        width: 300px;
     }
     /* --------------proyecto --------------- */
 
@@ -718,17 +719,60 @@ footer p{
     }
     
     #contacto .contenedor-cont{
-        margin-left: 50px;
+        margin-left: 10px;
         flex-direction: column;
         align-items: center;
     }
     .contenedor-form form{
-        width: 400px;
+        width: 300px;
         border-radius: 20px;
     }
     
     .contenedor-form form .fila{
         margin-bottom: 10px;
+
     }
     
+    .contenedor-form form .mitad{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor-form input, textarea{
+        padding: 20px;
+    }
+    
+    .contenedor-form input{
+        width: 100%;
+    }
+    
+    .contenedor-form .input-full{
+        width: 100%;
+    }
+    
+    .info-contacto{
+        padding-left: 20px;
+    }
+    .info-contacto h4{
+        font-size: 1.5rem;
+    }
+    
+    .info-contacto ul li{ 
+        font-size: 1.0rem;
+        color: black;
+        list-style: none;
+        padding-bottom: 5px
+    }
+    .fa-solid{
+        color: black;
+    }
+    .btn-enviar{
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px; 
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 }
